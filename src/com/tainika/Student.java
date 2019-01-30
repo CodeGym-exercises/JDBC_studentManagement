@@ -1,7 +1,7 @@
 package com.tainika;
 
 public class Student {
-    private Long id;
+    private int id;
     private String studentCode;
     private String name;
     private int age;
@@ -9,18 +9,18 @@ public class Student {
     public Student() {
     }
 
-    public Student(Long id, String studentCode, String name, int age) {
+    public Student(int id, String studentCode, String name, int age) {
         this.id = id;
         this.studentCode = studentCode;
         this.name = name;
         this.age = age;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
