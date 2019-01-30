@@ -2,14 +2,20 @@ package com.tainika;
 
 public class Student {
     private int id;
-    private String studentCode;
+    private int studentCode;
     private String name;
     private int age;
 
     public Student() {
     }
 
-    public Student(int id, String studentCode, String name, int age) {
+    public Student(int studentCode, String name, int age) {
+        this.studentCode = studentCode;
+        this.name = name;
+        this.age = age;
+    }
+
+    public Student(int id, int studentCode, String name, int age) {
         this.id = id;
         this.studentCode = studentCode;
         this.name = name;
@@ -24,11 +30,11 @@ public class Student {
         this.id = id;
     }
 
-    public String getStudentCode() {
+    public int getStudentCode() {
         return studentCode;
     }
 
-    public void setStudentCode(String studentCode) {
+    public void setStudentCode(int studentCode) {
         this.studentCode = studentCode;
     }
 

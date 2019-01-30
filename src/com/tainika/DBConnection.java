@@ -23,9 +23,6 @@ public class DBConnection {
             System.out.println("Connected!! ");
         }catch (SQLException e){
             System.out.println("Err: " + e.getMessage());
-        }finally {
-            if(connection!=null)
-            {connection.close();}
         }
 
         return connection;
